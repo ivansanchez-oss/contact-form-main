@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <dialog class="form__ok">
+      <h2>Message Sent!</h2>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </dialog>
+
+    <div class="container">
+      <h1 class="title">Contact Us</h1>
+
+      <form action="">
+        <div class="form__group">
+          <label class="form__label" for="fname">First Name</label>
+          <input
+            class="form__text"
+            type="text"
+            id="fname"
+            name="fname"
+            required
+          />
+          <p class="form__error">This field is required</p>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="lname">Last Name</label>
+          <input
+            class="form__text"
+            type="text"
+            id="lname"
+            name="lname"
+            required
+          />
+          <p class="form__error">This field is required</p>
+        </div>
+
+        <div class="form__group grid-col-span-2">
+          <label class="form__label" for="email">Email Address</label>
+          <input
+            class="form__text"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <p class="form__error">Please enter a valid email address</p>
+        </div>
+
+        <div class="form__group grid-col-span-2">
+          <label class="form__label" for="">Query Type</label>
+
+          <div class="form__group-flex">
+            <div class="form__group-checkbox">
+              <input class="form__checkbox" type="radio" name="query" />
+              <label for="">General Enquiry</label>
+            </div>
+            <div class="form__group-checkbox">
+              <input class="form__checkbox" type="radio" name="query" />
+              <label for="">Support Request</label>
+            </div>
+          </div>
+
+          <p class="form__error">Please select a query type</p>
+        </div>
+
+        <div class="form__group grid-col-span-2">
+          <label class="form__label" for="message"> Message </label>
+          <textarea
+            class="form__text-big"
+            id="message"
+            name="message"
+          ></textarea>
+          <p class="form__error">This field is required</p>
+        </div>
+
+        <div class="form__group-consent">
+          <input class="form__checkbox" type="checkbox" />
+          <label class="form__label" for="">
+            I consent to being contacted by the team
+          </label>
+          <p class="form__error">
+            To submit this form, please consent to being contacted
+          </p>
+        </div>
+
+        <button class="form__button grid-col-span-2">Submit</button>
+      </form>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Ivan Sanchez</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
